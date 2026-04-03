@@ -1,0 +1,28 @@
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.difficulty-badge.easy {
+  background: var(--diff-easy-bg);
+  color: var(--diff-easy);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.difficulty-badge.medium {
+  background: var(--diff-medium-bg);
+  color: var(--diff-medium);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.difficulty-badge.hard {
+  background: var(--diff-hard-bg);
+  color: var(--diff-hard);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}

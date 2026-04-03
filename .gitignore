@@ -1,0 +1,25 @@
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+codearena_mysql_data/
+
+# Backend (Java / Maven)
+codearena-backend/target/
+codearena-backend/*.jar
+codearena-backend/.mvn/
+
+# Frontend (Node / Vite)
+codearena-frontend/node_modules/
+codearena-frontend/dist/
+codearena-frontend/.env
+codearena-frontend/.env.local
+
+# Logs
+*.log

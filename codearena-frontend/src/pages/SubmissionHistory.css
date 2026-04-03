@@ -1,0 +1,115 @@
+.history-page {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+.history-header {
+  margin-bottom: 32px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.history-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.history-subtitle {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.history-table-wrapper {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease-out 100ms backwards;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(10, 14, 30, 0.8);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.history-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background var(--transition-fast);
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tbody tr:hover td {
+  background: rgba(99, 102, 241, 0.03);
+}
+
+.history-problem-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.history-problem-link:hover {
+  color: var(--accent-primary);
+}
+
+.history-verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.history-verdict.accepted {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.history-verdict.failed {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.history-verdict.error {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.history-time {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.history-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
